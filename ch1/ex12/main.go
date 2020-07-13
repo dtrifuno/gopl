@@ -14,7 +14,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", handler)
-	log.Fatal(http.ListenAndServe(":9999", nil))
+	log.Fatal(http.ListenAndServe("0.0.0.0:9999", nil))
 }
 
 func handler(rw http.ResponseWriter, r *http.Request) {
